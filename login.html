@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Login Page</title>
+    <script src="https://your-cdn-path/jquery.min.js"></script>
+    <script>
+        function login() {
+            // 获取用户输入
+            var username = $('#username').val();
+            var password = $('#password').val();
+
+            // 调用Azure AD B2C的登录API
+            // 这里需要根据你的实际情况编写登录逻辑
+        }
+    </script>
+</head>
+<body>
+    <h1>登录</h1>
+    <form onsubmit="login(); return false;">
+        <label for="username">用户名:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">密码:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">登录</button>
+    </form>
+</body>
+</html>
